@@ -479,6 +479,12 @@ hr.small {
   margin-bottom: 30px;
 }
 
+.modal-content .logo {
+  margin-top: 20px;
+  width: 50px;
+  height: auto;
+}
+
 .modal-content .item-details {
   margin: 30px 0;
 }
