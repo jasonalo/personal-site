@@ -496,6 +496,20 @@ hr.small {
   margin: 30px 0;
 }
 
+.modal-content .modal-list {
+  text-align: left;
+  margin: 20px;
+}
+
+.modal-content .modal-list-short {
+  text-align: left;
+  margin: 40px;
+}
+
+.modal-content .modal-list-item {
+  margin-bottom: 10px;
+}
+
 .close-modal {
   position: absolute;
   width: 75px;
