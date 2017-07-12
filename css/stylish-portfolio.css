@@ -173,6 +173,12 @@ hr.small {
     text-align: left;
 }
 
+#about-img {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
 /* Callout */
 
 .callout-1 {
@@ -454,6 +460,11 @@ hr.small {
     margin: 0 auto;
 }
 
+#involvement-more {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 /* Modals */
 
 .modal-content {
@@ -501,7 +512,7 @@ hr.small {
   float: none;
   margin: 0 auto;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .modal-content .modal-list-item {
