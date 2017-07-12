@@ -367,7 +367,7 @@ hr.small {
     min-height: 150px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
+    padding: 20px 20px 20px;
   }
   .timeline > li .timeline-image {
     width: 150px;
@@ -380,7 +380,7 @@ hr.small {
     line-height: 26px;
   }
   .timeline > li.timeline-inverted .timeline-panel {
-    padding: 0 20px 20px;
+    padding: 20px 20px 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -498,12 +498,10 @@ hr.small {
 
 .modal-content .modal-list {
   text-align: left;
-  margin: 20px;
-}
-
-.modal-content .modal-list-short {
-  text-align: left;
-  margin: 40px;
+  float: none;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .modal-content .modal-list-item {
@@ -571,22 +569,6 @@ hr.small {
 
 .contact .btn {
     margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
-.map iframe {
-    pointer-events: none;
 }
 
 /* Footer */
