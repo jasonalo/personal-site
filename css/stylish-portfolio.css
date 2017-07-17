@@ -507,6 +507,10 @@ hr.small {
   margin: 30px 0;
 }
 
+.modal-content .quote {
+  display: inline;
+}
+
 .modal-content .modal-list {
   text-align: left;
   float: none;
