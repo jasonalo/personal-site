@@ -491,6 +491,21 @@ hr.small {
   margin-bottom: 30px;
 }
 
+.modal-content .img-div {
+  padding-left: 0px;
+}
+
+@media (max-width: 992px) {
+  .modal-content .img-div {
+    padding-right: 0px;
+  }
+}
+
+.modal-content .modal-p {
+    text-indent: 30px;
+    text-align: left;
+}
+
 .modal-content .logo {
   margin-top: 20px;
   width: 50px;
