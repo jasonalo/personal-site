@@ -499,6 +499,10 @@ hr.small {
   .modal-content .img-div {
     padding-right: 0px;
   }
+  
+  .modal-content .p-img {
+    margin-bottom: 0px;
+  }
 }
 
 .modal-content .modal-p {
