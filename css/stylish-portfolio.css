@@ -506,6 +506,17 @@ hr.small {
     text-align: left;
 }
 
+.modal-content .modal-more-h4 {
+    text-align: left;
+    text-indent: 80px;
+}
+
+@media (max-width: 768px) {
+    .modal-content .modal-more-h4 {
+        text-indent: 20px;
+    }
+}
+
 .modal-content .logo {
   margin-top: 20px;
   width: 50px;
