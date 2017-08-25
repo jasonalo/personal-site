@@ -1,10 +1,7 @@
 /*!
- * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * CSS styling by Jason Wai-Ho Lo
+ * All rights reserved 2017
  */
-
-/* Global Styles */
 
 html,
 body {
@@ -28,8 +25,6 @@ body {
     font-size: 4.5em;
     font-weight: 700;
 }
-
-/* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
@@ -57,13 +52,9 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
-
 hr.small {
     max-width: 100px;
 }
-
-/* Side Menu */
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -148,8 +139,6 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-
 .header {
     display: table;
     position: relative;
@@ -161,8 +150,6 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
-
-/* About */
 
 .about {
     padding: 50px 20px;
@@ -178,8 +165,6 @@ hr.small {
   margin: auto;
   margin-bottom: 5px;
 }
-
-/* Callout */
 
 .callout-1 {
     display: table;
@@ -214,8 +199,6 @@ hr.small {
     -o-filter: grayscale(50%);
     opacity: 0.75;
 }
-
-/* Education */
 
 .education {
     padding: 50px 20px;
@@ -409,8 +392,6 @@ hr.small {
   }
 }
 
-/* Employments */
-
 .employments {
     padding: 50px 20px;
 }
@@ -425,8 +406,6 @@ hr.small {
     transition: 0.2s;
     -o-transition: 0.2s;
 }
-
-/* Involvements */
 
 .involvements {
     padding: 50px 0;
@@ -464,8 +443,6 @@ hr.small {
     padding-left: 50px;
     padding-right: 50px;
 }
-
-/* Modals */
 
 .modal-content {
   border-radius: 0;
@@ -574,9 +551,7 @@ hr.small {
   background-color: #2C3E50;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  /* IE 9 */
   -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
   z-index: 1051;
 }
 
@@ -586,9 +561,7 @@ hr.small {
   background-color: #2C3E50;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  /* IE 9 */
   -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
   z-index: 1052;
 }
 
@@ -596,8 +569,6 @@ hr.small {
   opacity: 0;
   display: none;
 }
-
-/* Call to Action */
 
 .call-to-action {
     padding: 50px 0;
@@ -607,7 +578,6 @@ hr.small {
     margin: 10px;
 }
 
-/* Contact */
 .contact {
     padding: 50px 0;
 }
@@ -615,8 +585,6 @@ hr.small {
 .contact .btn {
     margin: 10px;
 }
-
-/* Footer */
 
 footer {
     padding: 50px 0;
