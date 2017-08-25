@@ -1050,7 +1050,10 @@
       </div>
       <br>
       <hr class="small">
-      <p class="text-muted text-center">Copyright &copy; Jason Wai-Ho Lo 2017</p>
+      <p class="text-muted text-center">
+        Copyright &copy; Jason Wai-Ho Lo
+        <span id="footerYear"></span>
+      </p>
     </div>
     <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw"></i></a>
   </footer>
@@ -1101,6 +1104,13 @@
           });
         }
       }
+    });
+    $(function() {
+      now = new Date;
+      theYear=now.getYear();
+      if (theYear < 1900)
+        theYear=theYear+1900;
+      document.getElementById("footerYear").innerHTML = theYear;
     });
   </script>
 </body>
