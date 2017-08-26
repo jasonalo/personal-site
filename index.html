@@ -1066,6 +1066,7 @@
     <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw"></i></a>
   </footer>
   <script src="js/jquery.js"></script>
+  <script src="js/jquery.appear.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script>
     $("#menu-close").click(function(e) {
@@ -1119,6 +1120,19 @@
       if (theYear < 1900)
         theYear=theYear+1900;
       document.getElementById("footerYear").innerHTML = theYear;
+    });
+    $(function() {
+      $('#about').appear();
+      var aboutTimestamp = 0;
+      $('#about').on('appear', function(event) {
+        if (aboutTimestamp === 0) {
+          aboutTimestamp = event.timeStamp;
+        };
+      });
+      $('#about').on('disappear', function(event) {
+        console.log('View on About me section: ' + (event.timeStamp - aboutTimestamp) / 1000 + 's');
+        aboutTimestamp = 0;
+      });
     });
   </script>
 </body>
