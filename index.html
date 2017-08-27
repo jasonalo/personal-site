@@ -1147,8 +1147,9 @@
       $('section').on('disappear', function(event) {
         var sectionName = $(this).attr('id');
         var sectionDuration = (event.timeStamp - $(this).data('timestamp'));
-        ga('send', 'timing', 'duration', sectionName, sectionDuration);
-        //console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
+        ga('send', 'timing', 'Section View Duration', sectionName, sectionDuration);
+        console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
+        ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
         $(this).data('timestamp', 0);
       });
     });
