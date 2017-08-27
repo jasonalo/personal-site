@@ -13,8 +13,6 @@
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-105316728-1', 'auto');
     ga('send', 'pageview');
-    ga('send', 'timing', 'JS Dependencies', 'load', 3549);
-    ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
   </script>
   <title>Jason Wai-Ho Lo</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -1150,13 +1148,11 @@
         var sectionName = $(this).attr('id');
         var sectionDuration = (event.timeStamp - $(this).data('timestamp'));
         ga('send', 'timing', 'Section View Duration', sectionName, sectionDuration);
-        console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
-        ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
+        //console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
+        //ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
         $(this).data('timestamp', 0);
       });
     });
-    ga('send', 'timing', 'JS Dependencies', 'load', 3549);
-    ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
     $("#link-hopperide").click(function() {
       ga('send', 'event', 'Links', 'Hopperide');
     });
