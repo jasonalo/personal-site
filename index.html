@@ -360,7 +360,7 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
             <div class="modal-body">
-              <a target="_blank" href="https://hopperide.ca/"><h2>Hopperide, Inc.</h2></a>
+              <a id="link-hopperide" target="_blank" href="https://hopperide.ca/"><h2>Hopperide, Inc.</h2></a>
               <h3>Co-founder, Chief Technology Officer</h3>
               <h4>Aug. 2016 - present</h4>
               <img src="img/hopperide-logo.png" class="img-responsive img-centered logo" alt="" />
@@ -1062,13 +1062,13 @@
           <p>Ottawa, ON, Canada</p>
         </div>
         <div class="col-sm-4 text-center">
-          <a href="https://linkedin.com/in/jason-waiho-lo/" target="_blank">
+          <a id="link-linkedin" href="https://linkedin.com/in/jason-waiho-lo/" target="_blank">
             <i class="fa fa-linkedin fa-fw fa-3x"></i>
             <p>Connect on LinkedIn</p>
           </a>
         </div>
         <div class="col-sm-4 text-center">
-          <a href="mailto:jason.waiho.lo@gmail.com">
+          <a id="link-email-me" href="mailto:jason.waiho.lo@gmail.com">
             <i class="fa fa-envelope-o fa-fw fa-3x"></i>
             <p>jason.waiho.lo@gmail.com</p>
           </a>
@@ -1157,7 +1157,15 @@
     });
     ga('send', 'timing', 'JS Dependencies', 'load', 3549);
     ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
-    ga('send', 'event', 'Videos', 'play');
+    $("#link-hopperide").click(function() {
+      ga('send', 'event', 'Links', 'Hopperide');
+    });
+    $("#link-linkedin").click(function() {
+      ga('send', 'event', 'Links', 'Email Me');
+    });
+    $("#link-email-me").click(function() {
+      ga('send', 'event', 'Links', 'LinkedIn');
+    });
   </script>
 </body>
 </html>
