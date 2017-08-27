@@ -1138,16 +1138,17 @@
       document.getElementById("footerYear").innerHTML = theYear;
     });
     $(function() {
-      $('#about').appear();
-      var aboutTimestamp = 0;
-      $('#about').on('appear', function(event) {
-        if (aboutTimestamp === 0) {
-          aboutTimestamp = event.timeStamp;
-        };
+      $('section').appear();
+      $('section').on('appear', function(event) {
+        if (!($(this).data('timestamp')) || $(this).data('timestamp') === 0) {
+          $(this).data('timestamp', event.timeStamp);
+        }
       });
-      $('#about').on('disappear', function(event) {
-        console.log('View on About me section: ' + (event.timeStamp - aboutTimestamp) / 1000 + 's');
-        aboutTimestamp = 0;
+      $('section').on('disappear', function(event) {
+          console.log('View on ' + $(this).attr('id') + ': ' + 
+              ((event.timeStamp - $(this).data('timestamp')) / 1000) + 
+              's');
+        $(this).data('timestamp', 0);
       });
     });
   </script>
