@@ -482,6 +482,12 @@ hr.small {
   }
 }
 
+@media (min-width: 992px) {
+  .modal-content .bottom-p {
+    margin-bottom: 25px;
+  }
+}
+
 .modal-content .modal-p {
     text-indent: 30px;
     text-align: left;
