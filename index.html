@@ -1145,9 +1145,10 @@
         }
       });
       $('section').on('disappear', function(event) {
-          console.log('View on ' + $(this).attr('id') + ': ' + 
-              ((event.timeStamp - $(this).data('timestamp')) / 1000) + 
-              's');
+        var sectionName = $(this).attr('id');
+        var sectionDuration = (event.timeStamp - $(this).data('timestamp'));
+        ga('send', 'timing', 'duration', sectionName, sectionDuration);
+        //console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
         $(this).data('timestamp', 0);
       });
     });
