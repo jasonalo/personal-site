@@ -1148,7 +1148,7 @@
         var sectionName = $(this).attr('id');
         var sectionDuration = (event.timeStamp - $(this).data('timestamp'));
         ga('send', 'timing', 'Section View Duration', sectionName, sectionDuration);
-        console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
+        //console.log('View on ' + sectionName + ': ' + (sectionDuration / 1000) + 's');
         //ga('send', 'timing', 'Section View Duration', 'sectionName', 5000);
         $(this).data('timestamp', 0);
       });
@@ -1156,19 +1156,18 @@
     var modalTimer;
     $(".toggle-modal").click(function() {
       modalTimer = {"modal": $(this).attr("data-modal"), "timestamp": $.now()};
-      console.log($(this).attr("data-modal") + ' modal toggle clicked ' + $.now());
     });
     $(".close-modal-top").click(function() {
       var modalName = modalTimer.modal;
       var modalDuration = ($.now() - modalTimer.timestamp);
       ga('send', 'timing', 'Modal View Duration', modalName, modalDuration, "Top closed");
-      console.log('View on ' + modalName + ': ' + (modalDuration / 1000) + 's (top closed)');
+      //console.log('View on ' + modalName + ': ' + (modalDuration / 1000) + 's (top closed)');
     });
     $(".close-modal-bottom").click(function() {
       var modalName = modalTimer.modal;
       var modalDuration = ($.now() - modalTimer.timestamp);
       ga('send', 'timing', 'Modal View Duration', modalName, modalDuration, "Bottom closed");
-      console.log('View on ' + modalName + ': ' + (modalDuration / 1000) + 's (bottom closed)');
+      //console.log('View on ' + modalName + ': ' + (modalDuration / 1000) + 's (bottom closed)');
     });
     $("#link-hopperide").click(function() {
       ga('send', 'event', 'Links', 'Hopperide');
