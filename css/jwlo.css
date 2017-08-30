@@ -457,19 +457,6 @@ hr.small {
     color: black;
 }
 
-.float-clickable {
-    position: absolute;
-    bottom: -32px;
-    right: 2px;
-    height: 15%;
-}
-    
-@media (min-width: 992px) {
-    .float-clickable {
-      display: none;
-    }
-}
-
 #involvement-more {
     padding-left: 50px;
     padding-right: 50px;
