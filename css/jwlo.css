@@ -441,11 +441,33 @@ hr.small {
     box-shadow: 5px 5px 3px #ccc
 }
 
+.float-more-white {
+    font-weight: bold;
+    position: absolute;
+    bottom: -12px;
+    right: 5px;
+    color: white;
+}
+
+.float-more-black {
+    font-weight: bold;
+    position: absolute;
+    bottom: -12px;
+    right: 5px;
+    color: black;
+}
+
 .float-clickable {
     position: absolute;
-    bottom: -25px;
-    right: 0px;
+    bottom: -32px;
+    right: 2px;
     height: 15%;
+}
+    
+@media (min-width: 992px) {
+    .float-clickable {
+      display: none;
+    }
 }
 
 #involvement-more {
