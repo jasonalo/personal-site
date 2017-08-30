@@ -417,6 +417,7 @@ hr.small {
 
 .involvements-item {
     margin-bottom: 30px;
+    position: relative;
 }
 
 .involvements-title {
@@ -438,6 +439,13 @@ hr.small {
 .img-involvements {
     margin: 0 auto;
     box-shadow: 5px 5px 3px #ccc
+}
+
+.float-clickable {
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    height: 15%;
 }
 
 #involvement-more {
