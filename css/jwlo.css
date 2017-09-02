@@ -26,6 +26,12 @@ body {
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .text-vertical-center h1 {
+        font-size: 2.8em;
+    }
+}
+
 .btn-dark {
     border-radius: 0;
     color: #fff;
