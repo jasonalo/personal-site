@@ -9,8 +9,8 @@
   <meta name="google-site-verification" content="EjkNlfvkfqeMuB8lfud1eTn8JpbHySwgN6mA56C_MU0" />
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-105316728-1', 'auto');
     ga('send', 'pageview');
@@ -59,7 +59,7 @@
   </nav>
   <header id="top" class="header">
     <div class="text-vertical-center">
-      <h1>Jason Wai-Ho Lo</h1>
+      <h1 class="h1-callout">Jason Wai-Ho Lo</h1>
       <h3>Computational chemist&#44; Saturday mechanic&#44; and outdoor enthusiast</h3>
       <br>
       <a href="#about" class="btn btn-dark btn-lg">Find out more</a>
@@ -107,9 +107,9 @@
   </section>
   <aside class="callout-1">
     <div class="text-vertical-center">
-      <h1>
+      <p class="h1-callout">
         Dedicated&#44; organized&#44; <br/>and team-centred
-      </h1>
+      </p>
     </div>
   </aside>
   <section id="education" class="education bg-primary">
@@ -124,7 +124,7 @@
         <div class="col-lg-12">
           <ul class="timeline">
             <li>
-              <a href="#educationModal1" data-toggle="modal" data-modal="uOttawa-MSc" class="timeline-item toggle-modal">
+              <a href="#educationModal1" data-toggle="modal" class="timeline-item " onclick="toggleModal('uOttawa-MSc')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/uottawa-logo.png" alt="" />
                 </div>
@@ -140,7 +140,7 @@
               </a>
             </li>
             <li class="timeline-inverted">
-              <a href="#educationModal2" data-toggle="modal" data-modal="Dal-BSc" class="timeline-item toggle-modal">
+              <a href="#educationModal2" data-toggle="modal" class="timeline-item " onclick="toggleModal('Dal-BSc')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/dal-logo.png" alt="" />
                 </div>
@@ -162,7 +162,7 @@
   </section>
   <div class="modal fade" id="educationModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -190,7 +190,7 @@
                   Results published in thesis as well as peer-reviewed publication
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default" onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -201,7 +201,7 @@
   </div>
   <div class="modal fade" id="educationModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -227,7 +227,7 @@
                   Dalhousie University Entrance Scholarship (2007)
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default" onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -248,7 +248,7 @@
         <div class="col-lg-12">
           <ul class="timeline">
             <li>
-              <a href="#employmentsModal1" data-toggle="modal" data-modal="Hopperide" class="timeline-item toggle-modal">
+              <a href="#employmentsModal1" data-toggle="modal" class="timeline-item " onclick="toggleModal('Hopperide')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/hopperide-logo.png" alt="" />
                 </div>
@@ -264,7 +264,7 @@
               </a>
             </li>
             <li class="timeline-inverted">
-              <a href="#employmentsModal2" data-toggle="modal" data-modal="uOttawa-TA" class="timeline-item toggle-modal">
+              <a href="#employmentsModal2" data-toggle="modal" class="timeline-item " onclick="toggleModal('uOttawa-TA')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/uottawa-logo.png" alt="" />
                 </div>
@@ -280,7 +280,7 @@
               </a>
             </li>
             <li>
-              <a href="#employmentsModal3" data-toggle="modal" data-modal="uOttawa-tutor" class="timeline-item toggle-modal">
+              <a href="#employmentsModal3" data-toggle="modal" class="timeline-item " onclick="toggleModal('uOttawa-tutor')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/uottawa-logo.png" alt="" />
                 </div>
@@ -296,7 +296,7 @@
               </a>
             </li>
             <li class="timeline-inverted">
-              <a href="#employmentsModal4" data-toggle="modal" data-modal="Bayshore" class="timeline-item toggle-modal">
+              <a href="#employmentsModal4" data-toggle="modal" class="timeline-item " onclick="toggleModal('Bayshore')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/bayshore-logo.png" alt="" />
                 </div>
@@ -312,7 +312,7 @@
               </a>
             </li>
             <li>
-              <a href="#employmentsModal5" data-toggle="modal" data-modal="Dal-RA" class="timeline-item toggle-modal">
+              <a href="#employmentsModal5" data-toggle="modal" class="timeline-item " onclick="toggleModal('Dal-RA')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/dal-logo.png" alt="" />
                 </div>
@@ -328,7 +328,7 @@
               </a>
             </li>
             <li class="timeline-inverted">
-              <a href="#employmentsModal6" data-toggle="modal" data-modal="Dal-TA" class="timeline-item toggle-modal">
+              <a href="#employmentsModal6" data-toggle="modal" class="timeline-item " onclick="toggleModal('Dal-TA')">
                 <div class="timeline-image">
                   <img class="img-circle img-responsive" src="img/dal-logo.png" alt="" />
                 </div>
@@ -350,7 +350,7 @@
   </section>
   <div class="modal fade" id="employmentsModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -376,7 +376,7 @@
                   with the server, web, and mobile application
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default" onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -387,7 +387,7 @@
   </div>
   <div class="modal fade" id="employmentsModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -414,7 +414,7 @@
                   Created an attendance system with Near Field Communication (NFC) student cards
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -425,7 +425,7 @@
   </div>
   <div class="modal fade" id="employmentsModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -443,7 +443,7 @@
                   Provided tutoring service for science courses to high school and undergraduate students
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default" onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -454,7 +454,7 @@
   </div>
   <div class="modal fade" id="employmentsModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -481,7 +481,7 @@
                   12-hour shift work days or nights, on call
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -492,7 +492,7 @@
   </div>
   <div class="modal fade" id="employmentsModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -517,7 +517,7 @@
                   Results published in peer-reviewed publication
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -528,7 +528,7 @@
   </div>
   <div class="modal fade" id="employmentsModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -555,7 +555,7 @@
                   Graded assignments and exams
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -566,10 +566,10 @@
   </div>
   <aside class="callout-2">
     <div class="text-vertical-center">
-      <h1>
+      <p class="h1-callout">
         Creative&#44; adaptable&#44; <br/>
         and perpetual learning
-      </h1>
+      </p>
     </div>
   </aside>
   <section id="involvements" class="involvements">
@@ -581,7 +581,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="involvements-item">
-                <a href="#involvementsModal1" class="toggle-modal" data-modal="Travel" data-toggle="modal">
+                <a href="#involvementsModal1" onclick="toggleModal('Travel')" data-toggle="modal">
                   <h3 class="involvements-title">Travel</h3>
                   <img class="img-involvements img-responsive" src="img/hobbit-bilbos-trolls-te-papa-museum-christchurch.JPG" alt="" />
                   <p class="float-more-white">more...</p>
@@ -590,7 +590,7 @@
             </div>
             <div class="col-md-6">
               <div class="involvements-item">
-                <a href="#involvementsModal2" class="toggle-modal" data-modal="Outdoors" data-toggle="modal">
+                <a href="#involvementsModal2" onclick="toggleModal('Outdoors')" data-toggle="modal">
                   <h3 class="involvements-title">Outdoors</h3>
                   <img class="img-involvements img-responsive" src="img/algonquin-park-winter-camping.jpg" alt="" />
                   <p class="float-more-black">more...</p>
@@ -599,7 +599,7 @@
             </div>
             <div class="col-md-6">
               <div class="involvements-item">
-                <a href="#involvementsModal3" class="toggle-modal" data-modal="Mechanic" data-toggle="modal">
+                <a href="#involvementsModal3" onclick="toggleModal('Mechanic')" data-toggle="modal">
                   <h3 class="involvements-title">Saturday mechanic</h3>
                   <img class="img-involvements img-responsive" src="img/red-toolbox.JPG" alt="" />
                   <p class="float-more-white">more...</p>
@@ -608,7 +608,7 @@
             </div>
             <div class="col-md-6">
               <div class="involvements-item">
-                <a href="#involvementsModal4" class="toggle-modal" data-modal="Photography" data-toggle="modal">
+                <a href="#involvementsModal4" onclick="toggleModal('Photograph')" data-toggle="modal">
                   <h3 class="involvements-title">Photography</h3>
                   <img class="img-involvements img-responsive" src="img/canon-rebel.jpg" alt="" />
                   <p class="float-more-white">more...</p>
@@ -617,7 +617,7 @@
             </div>
             <div class="col-md-6">
               <div class="involvements-item">
-                <a href="#involvementsModal5" class="toggle-modal" data-modal="Music" data-toggle="modal">
+                <a href="#involvementsModal5" onclick="toggleModal('Music')" data-toggle="modal">
                   <h3 class="involvements-title">Music</h3>
                   <img class="img-involvements img-responsive" src="img/alto-saxophone.JPG" alt="" />
                   <p class="float-more-white">more...</p>
@@ -626,7 +626,7 @@
             </div>
             <div class="col-md-6">
               <div class="involvements-item">
-                <a href="#involvementsModal6" class="toggle-modal" data-modal="Sports" data-toggle="modal">
+                <a href="#involvementsModal6" onclick="toggleModal('Sports')" data-toggle="modal">
                   <h3 class="involvements-title">Endurance sports</h3>
                   <img class="img-involvements img-responsive" src="img/spartan-beast.jpg" alt="" />
                   <p class="float-more-white">more...</p>
@@ -634,14 +634,14 @@
               </div>
             </div>
           </div>
-          <a href="#involvementsModalMore" data-toggle="modal" data-modal="More" class="btn btn-dark toggle-modal" id="involvement-more"><b>More</b></a>
+          <a href="#involvementsModalMore" data-toggle="modal" class="btn btn-dark " onclick="toggleModal('More')" id="involvement-more"><b>More</b></a>
         </div>
       </div>
     </div>
   </section>
   <div class="modal fade" id="involvementsModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -686,7 +686,7 @@
                 </div>
               </div>
               <br/>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -697,7 +697,7 @@
   </div>
   <div class="modal fade" id="involvementsModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -744,7 +744,7 @@
                 </div>
               </div>
               <br/>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -755,7 +755,7 @@
   </div>
   <div class="modal fade" id="involvementsModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -796,7 +796,7 @@
               </div>
               <br/>
               <div class="clearfix"></div>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -807,7 +807,7 @@
   </div>
   <div class="modal fade" id="involvementsModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -859,7 +859,7 @@
                 </div>
               </div>
               <br/>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -870,7 +870,7 @@
   </div>
   <div class="modal fade" id="involvementsModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -902,7 +902,7 @@
               </div>
               <br/>
               <div class="clearfix"></div>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -913,7 +913,7 @@
   </div>
   <div class="modal fade" id="involvementsModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -943,7 +943,7 @@
                 </p>
               </div>
               <br/>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default " onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -954,7 +954,7 @@
   </div>
   <div class="modal fade" id="involvementsModalMore" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-      <div class="close-modal close-modal-top" data-dismiss="modal">
+      <div class="close-modal " onclick="closeModalTop()" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
@@ -1028,7 +1028,7 @@
                   Moncton Hospital Emergency Room, Volunteer (Apr. 2007 - Aug. 2008)
                 </li>
               </ul>
-              <button type="button" class="btn btn-default close-modal-bottom" data-dismiss="modal">
+              <button type="button" class="btn btn-default" onclick="closeModalBottom()" data-dismiss="modal">
                 <i class="fa fa-times"></i>Close
               </button>
             </div>
@@ -1159,19 +1159,19 @@
       });
     });
     var modalTimer;
-    $(".toggle-modal").click(function() {
-      modalTimer = {"modal": $(this).attr("data-modal"), "timestamp": $.now()};
-    });
-    $(".close-modal-top").click(function() {
+    function toggleModal(modalName) {
+      modalTimer = {"modal": modalName, "timestamp": $.now()};
+    };
+    function closeModalTop() {
       var modalName = modalTimer.modal;
       var modalDuration = ($.now() - modalTimer.timestamp);
       ga('send', 'timing', 'Modal View Duration', modalName, modalDuration, "Top closed");
-    });
-    $(".close-modal-bottom").click(function() {
+    };
+    function closeModalBottom() {
       var modalName = modalTimer.modal;
       var modalDuration = ($.now() - modalTimer.timestamp);
       ga('send', 'timing', 'Modal View Duration', modalName, modalDuration, "Bottom closed");
-    });
+    };
     $("#link-hopperide").click(function() {
       ga('send', 'event', 'Links', 'Hopperide');
     });
